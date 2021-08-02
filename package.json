@@ -1,0 +1,40 @@
+{
+  "name": "gym-booking-bot-v2",
+  "version": "0.1.0",
+  "bin": {
+    "gym-booking-bot-v2": "bin/gym-booking-bot-v2.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "cdk": "cdk",
+    "deploy": "npm run build && npm run cdk deploy"
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "1.97.0",
+    "@types/aws-lambda": "^8.10.80",
+    "@types/jest": "^26.0.10",
+    "@types/node": "10.17.27",
+    "@types/puppeteer": "^5.4.4",
+    "@types/puppeteer-core": "^5.4.0",
+    "@types/source-map-support": "^0.5.4",
+    "aws-cdk": "1.97.0",
+    "jest": "^26.4.2",
+    "ts-jest": "^26.2.0",
+    "ts-node": "^9.0.0",
+    "typescript": "~3.9.7"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-apigateway": "^1.115.0",
+    "@aws-cdk/aws-events": "^1.115.0",
+    "@aws-cdk/aws-events-targets": "^1.115.0",
+    "@aws-cdk/aws-lambda": "^1.115.0",
+    "@aws-cdk/aws-lambda-nodejs": "^1.115.0",
+    "@aws-cdk/core": "^1.115.0",
+    "chrome-aws-lambda": "^10.1.0",
+    "dotenv": "^10.0.0",
+    "puppeteer-core": "^10.1.0",
+    "source-map-support": "^0.5.16"
+  }
+}
